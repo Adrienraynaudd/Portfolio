@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Menu Toggle</title>
+    <title>About</title>
 </head>
 <body>
+    <h1>About</h1>
     <div id="menuToggle">
         <div class="bar"></div>
         <div class="bar"></div>
@@ -14,19 +15,98 @@
     </div>
     <nav id="menu">
         <ul>
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">Page 1</a></li>
-            <li><a href="#">Page 2</a></li>
-            <li><a href="#">Page 3</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="entreprise.html">Entreprise</a></li>
+            <li><a href="blog.html">Blog</a></li>
         </ul>
     </nav>
     <section id="about">
-        <!-- Contenu de la page Portfolio -->
+        <div id="profile-image"></div>
+        <div id="text-container">
+            <h2>Adrien Raynaud</h2>
+            <p>Bonjour, je suis Adrien, passionné d'informatique et de jeux vidéo. Je vous laisse me découvrir sur ce portfolio, avec une partie blog, mon parcours. 😀</p>
+        </div>
+        <h1>Timeline</h1>
+        <div class="timeline">
+    <ul class="timeline">
+        <li class="time">
+            <div class="content">2023</div>
+        </li>
+        <li class="branch"> 
+            <div class="content"> 
+                <h3>2023/2024</h3>
+                <p>Troisième année de Bachelor à Nantes Ynov Campus, et début de l'alternance chez Stramatel.</p>
+            </div>
+        </li>
+        <li class="branch"> 
+            <div class="content"> 
+                <h3>2022/2023</h3>
+                <p>Deuxième année de Bachelor à Nantes Ynov Campus, poursuite de mon emploi étudiant chez McDonald's à Clisson, et stage de fin d'année chez Alexis Leglise Informatique pour refaire le site de l'entreprise.</p>
+            </div>
+        </li>
+        <li class="branch"> 
+            <div class="content"> 
+                <h3>2021/2022</h3>
+                <p>Première année de Bachelor à Nantes Ynov Campus et début de mon emploi étudiant chez McDonald's à Clisson.</p>
+            </div>
+        </li>
+        <li class="branch"> 
+            <div class="content"> 
+              <h3>2020/2021</h3>
+              <p>Début d'un BTS Systèmes Numériques à Laval (arrêté pour cause de maladie) .</p>
+            </div>
+        </li>
+        <li class="branch"> 
+            <div class="content"> 
+              <h3>Juillet 2020</h3>
+              <p>obtention du baccalauréat STI2D.</p>
+            </div>
+            <li class="time">
+                <div class="content">2020</div>
+              </li>
+    </ul>
+            </div>
+            <h1>Compétences</h1>
+            <div class="competences">
+                <table>
+                    <tr>
+                        <th>Catégorie</th>
+                        <th>Compétences</th>
+                    </tr>
+                    <tr>
+                        <td>Hard Skills</td>
+                        <td> <!-- Colonne pour les Hard Skills -->
+                            <ul>
+                                <li><img class="logo" src="c.png" alt="Logo 1"> C#</li>
+                                <li><img class="logo" src="c++.png" alt="Logo 2"> C++</li>
+                                <li><img class="logo" src="css.png" alt="Logo 2"> CSS</li>
+                                <li><img class="logo" src="html.png" alt="Logo 2"> Html</li>
+                                <li><img class="logo" src="java.png" alt="Logo 2"> Java</li>
+                                <li><img class="logo" src="js.png" alt="Logo 2"> JavaScript</li>
+                                <li><img class="logo" src="php.png" alt="Logo 2"> Php</li>
+                                <li><img class="logo" src="sql.png" alt="Logo 2"> Sql</li>
+                                <li><img class="logo" src="python.png" alt="Logo 2"> Python</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Soft Skills</td>
+                        <td> <!-- Colonne pour les Soft Skills -->
+                            <ul>
+                                <li><img class="logo" src="adaptation.jpg" alt="Logo 3"> Adaptation</li>
+                                <li><img class="logo" src="Créativité.png" alt="Logo 4"> Créativité</li>
+                                <li><img class="logo" src="persévérence.png" alt="Logo 4"> Persévérance</li>
+                                <li><img class="logo" src="polyvalent.png" alt="Logo 4"> Polyvalent</li>
+                                <li><img class="logo" src="projet.png" alt="Logo 4"> Gestion de Projet</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
     </section>
-    <footer>
-        <!-- Pied de page -->
-        <p>&copy; 2023 Votre Nom</p>
-    </footer>
+
     <script>
         // JavaScript pour basculer le menu
         const menuToggle = document.getElementById("menuToggle");
