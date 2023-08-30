@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Menu Toggle</title>
+</head>
+<body>
+    <div id="menuToggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <nav id="menu">
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Page 1</a></li>
+            <li><a href="#">Page 2</a></li>
+            <li><a href="#">Page 3</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <!-- Contenu de la page Portfolio -->
+    </section>
+    <footer>
+        <!-- Pied de page -->
+        <p>&copy; 2023 Votre Nom</p>
+    </footer>
+    <script>
+        // JavaScript pour basculer le menu
+        const menuToggle = document.getElementById("menuToggle");
+        const menu = document.getElementById("menu");
+
+        menuToggle.addEventListener("click", function() {
+            menu.classList.toggle("visible");
+            menuToggle.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>
