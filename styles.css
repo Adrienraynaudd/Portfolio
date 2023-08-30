@@ -267,3 +267,26 @@ th, td {
     vertical-align: middle; /* Centre les logos verticalement dans les cellules du tableau */
      margin-right: 5px; /* Ajoute une marge à droite des logos pour l'espacement */
 }
+.CV {
+    width: 50%; 
+    height: 50%; 
+    vertical-align: middle; /* Centre les logos verticalement dans les cellules du tableau */
+     margin-right: 5px; /* Ajoute une marge à droite des logos pour l'espacement */
+}
+a.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    text-decoration: none;
+    border: none;
+    border-radius: 5px; /* Coins arrondis */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Animation de changement de couleur */
+}
+
+/* Style au survol du bouton */
+a.download-button:hover {
+    background-color: #0056b3; /* Nouvelle couleur de fond au survol */
+}
