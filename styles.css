@@ -344,3 +344,9 @@ h4{
   justify-content: center; /* Centre les éléments horizontalement */
   align-items: center; /* Centre les éléments verticalement */
 }
+.logoEn{
+  width: 30%; 
+  height: 30%; 
+  vertical-align: middle; /* Centre les logos verticalement dans les cellules du tableau */
+   margin-right: 5px; 
+}
