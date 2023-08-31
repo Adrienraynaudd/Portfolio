@@ -5,6 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Blog</title>
+    <style>
+        /* Styles CSS pour personnaliser votre mise en page de blog */
+        .article {
+            border: 1px solid #ccc;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            background-color: orange; /* Fond orange */
+        }
+
+        .article h2 {
+            color: rgb(0, 0, 0); /* Texte en blanc */
+        }
+
+        .article img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .read-more {
+            display: none;
+            color: rgb(0, 0, 0); /* Texte en blanc */
+            font-size: 25px;
+            line-height: 1.5;
+        }
+
+        .btn-read-more {
+            background-color: #007BFF;
+            color: #000000;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <h1>Blog</h1>
@@ -22,13 +57,84 @@
             <li><a href="blog.html">Blog</a></li>
         </ul>
     </nav>
-    <section id="about">
-        <!-- Contenu de la page Portfolio -->
+    <section id="blog">
+        <div class="article">
+            <h2>Article 1: "Mon Stage Chez Alexis Leglise Informatique SARL : Une Introduction"</h2>
+            <img src="locaux.jpg" alt="Image de l'article 1">
+            <p>Pendant ces 6 semaines de stages....</p>
+            <p class="read-more">Aujourd'hui, je suis ravi de vous emmener avec moi dans un voyage fascinant au cœur de l'informatique. Mon expérience au sein de l'équipe d'Alexis Leglise Informatique SARL a été à la fois instructive et passionnante, et je suis impatient de partager avec vous les moments marquants, les compétences acquises, et les défis surmontés tout au long de mon stage.Plonger tête première dans le monde de l'informatique a été une expérience palpitante. Dès le premier jour, j'ai été accueilli par une équipe de professionnels passionnés, prêts à me guider à travers les dédales complexes de ce domaine en constante évolution. Cette opportunité m'a permis de comprendre l'importance cruciale de l'informatique dans notre monde moderne.Chaque jour était une nouvelle occasion d'apprentissage.</p>
+            <button class="btn-read-more">Afficher</button>
+        </div>
+        <div class="article">
+            <h2>Article 2: "La Refonte du Site Web d'Alexis Leglise Informatique SARL"</h2>
+            <img src="refont.png" alt="Image de l'article 2">
+            <p>L'un des projets les plus excitants de mon stage...</p>
+            <p class="read-more"> Au cœur de mon expérience enrichissante chez Alexis Leglise Informatique SARL, l'un des moments les plus mémorables a été ma participation à la refonte complète de leur site web. Armé de mes compétences en développement web, j'ai entrepris avec enthousiasme la tâche de moderniser cet espace virtuel essentiel. Laissez-moi vous raconter comment j'ai navigué à travers cette aventure de transformation numérique, en repensant chaque aspect de l'interface pour créer une expérience en ligne plus immersive et conviviale.
+
+                La refonte du site web a été bien plus qu'une simple mise à jour esthétique. C'était une opportunité de redéfinir l'image en ligne d'Alexis Leglise Informatique SARL et de créer une plateforme qui reflète véritablement leur expertise et leur engagement envers l'excellence. Cette entreprise ne consistait pas seulement à changer les couleurs et les images, mais à réimaginer la façon dont les visiteurs interagiraient avec le site, de la navigation à la recherche d'informations vitales.Pour mener à bien cette mission, j'ai utilisé une combinaison de technologies de pointe, dont HTML, CSS, JavaScript et PHP. Chaque ligne de code était une pièce du puzzle visant à créer une expérience utilisateur exceptionnelle. J'ai commencé par analyser les flux de navigation existants et les points de douleur potentiels des utilisateurs. En comprenant les besoins et les attentes des visiteurs, j'ai pu concevoir une structure de site logique et intuitive.</p>
+                <button class="btn-read-more">Afficher</button>
+        </div>
+        <div class="article">
+            <h2>Article 3: "Le Défi de l'Intégration de l'API Google"</h2>
+            <img src="google.png" alt="Image de l'article 3">
+            <p>Parmi les défis les plus stimulants rencontrés au cours de mon stage...</p>
+            <p class="read-more">Au cours de mon stage enrichissant chez Alexis Leglise Informatique SARL, l'une des expériences les plus exigeantes mais également les plus formatrices a été l'intégration de l'API Google dans leur site web. Ce projet, qui semblait au départ relativement simple, s'est révélé être un défi technique complexe. Dans cet article, je vais vous emmener dans les coulisses de cette tâche ardue et vous expliquer comment j'ai navigué à travers les écueils pour garantir un fonctionnement optimal.L'intégration de l'API Google était essentielle pour offrir aux intervenant du site web une expérience améliorée et personnalisée. Elle devait permettre d'accéder à des fonctionnalités telles que la d'ajoute de contact après la prise de rendez-vous et l'envoie de mail automatique. Cependant, ce n'était pas aussi simple que de coller un morceau de code dans le site et de s'attendre à ce que tout fonctionne parfaitement.Dès le début, j'ai dû plonger profondément dans la documentation de l'API Google pour comprendre son fonctionnement et ses exigences. La première leçon que j'ai tirée de cette expérience a été l'importance de la patience et de la persévérance en informatique. Il est courant de se sentir submergé par la quantité d'informations techniques, mais en restant concentré et en prenant le temps de comprendre chaque étape, j'ai pu progresser.Bien sûr, tout ne s'est pas déroulé sans accroc. L'intégration de l'API Google a été ponctuée de défis inattendus. J'ai dû déboguer des erreurs, souvent cryptiques, qui semblaient surgir de nulle part. Cela m'a appris à devenir un détective du code, à rechercher attentivement les problèmes et à développer des compétences de dépannage essentielles pour tout développeur.</p>
+            <button class="btn-read-more">Afficher</button>
+        </div>
+        <div class="article">
+            <h2>Article 4 : "L'Informatique en Entreprise : L'Art de l'Adaptation et Gestion du temps"</h2>
+            <img src="adaptation1.jpg" alt="Image de l'article 4">
+            <p> ce que j'ai appris sur l'adaptation et de la gestion du temps</p>
+            <p class="read-more">Mon stage chez Alexis Leglise Informatique SARL a été une immersion complète dans le monde dynamique de l'informatique en entreprise. Au-delà des compétences techniques que j'ai acquises, cette expérience m'a enseigné des leçons précieuses sur l'art de l'adaptation dans le domaine de l'informatique en entreprise.
+
+                Adaptation Constante : L'une des premières leçons que j'ai apprises est que l'informatique en entreprise est en constante évolution. Les technologies évoluent rapidement, et les entreprises doivent s'adapter pour rester compétitives. Mon stage m'a montré l'importance d'être prêt à apprendre de nouvelles compétences et à suivre les dernières tendances pour rester pertinent.
+                
+                Satisfaction du Client : Un aspect essentiel de l'informatique en entreprise est de répondre aux besoins des clients. J'ai eu l'opportunité de travailler sur des projets sur mesure pour répondre aux besoins spécifiques d'Alexis. Cette expérience m'a montré l'importance de la satisfaction du client et de la personnalisation des solutions.
+                Gestion du Temps et des Priorités : Avec des projets en cours et des délais à respecter, la gestion du temps et des priorités est cruciale. J'ai appris à organiser mon travail de manière efficace pour garantir que les projets avancent sans heurts.</p>
+                <button class="btn-read-more">Afficher</button>
+        </div>
+        <div class="article">
+            <h2>Article 5: "Les Leçons Apprises et l'Avenir</h2>
+            <img src="learn.jpg" alt="Image de l'article 5">
+            <p>Mon stage chez Alexis Leglise Informatique SARL a été une expérience formatrice....</p>
+            <p class="read-more">Mon stage chez Alexis Leglise Informatique SARL a été une véritable aventure dans le monde de l'informatique, où j'ai acquis des compétences techniques solides en développement web. Cependant, ce stage a été bien plus que l'accumulation de compétences en programmation. Il m'a également enseigné des leçons essentielles sur la gestion de projets, la communication en équipe et la résolution de problèmes, compétences cruciales qui transcendent le domaine de l'informatique et qui seront inestimables dans ma future carrière. Dans cet article, je vais partager avec vous l'importance de ces compétences au-delà de la programmation.
+                Gestion de Projets : Travailler sur la refonte du site web d'Alexis Leglise Informatique SARL m'a plongé dans l'univers complexe de la gestion de projets. J'ai appris à planifier, organiser et gérer les ressources de manière efficace. Cette compétence est essentielle dans n'importe quel domaine, car elle permet de mener à bien des projets de manière efficiente, en respectant les délais et le budget.
+                
+                
+                Résolution de Problèmes : Mon expérience avec l'intégration de l'API Google a été un véritable test de résolution de problèmes. J'ai appris à analyser les problèmes de manière systématique, à rechercher des solutions efficaces et à persévérer face aux défis techniques. La capacité à résoudre des problèmes est une compétence universelle qui peut être utilisée dans tous les aspects de la vie professionnelle.
+                
+                Ces compétences transversales sont un atout précieux dans le domaine de l'informatique, mais elles vont au-delà. Elles sont universellement recherchées par les employeurs dans tous les secteurs, car elles contribuent à la réussite de projets et à la croissance professionnelle. Mon stage chez Alexis Leglise Informatique SARL m'a montré que l'informatique n'est pas seulement une question de code, mais aussi de compétences humaines essentielles.</p>
+                <button class="btn-read-more">Afficher</button>
+        </div>
     </section>
+    <div>
+        <li></li>
+        <li></li>
+        <li></li>
+    </div>
     <footer>
         <!-- Pied de page -->
         <p>&copy; 2023 Raynaud Adrien</p>
     </footer>
+    <script>
+        // JavaScript pour basculer entre l'affichage complet et réduit du texte
+        const readMoreButtons = document.querySelectorAll('.btn-read-more');
+        const fullTextElements = document.querySelectorAll('.read-more');
+    
+        readMoreButtons.forEach((button, index) => {
+            button.addEventListener('click', () => {
+                if (fullTextElements[index].style.display === 'none' || fullTextElements[index].style.display === '') {
+                    // Afficher le texte complet et changer le bouton en "Masquer"
+                    fullTextElements[index].style.display = 'block';
+                    button.textContent = 'Masquer';
+                } else {
+                    // Masquer le texte complet et changer le bouton en "Afficher"
+                    fullTextElements[index].style.display = 'none';
+                    button.textContent = 'Afficher';
+                }
+            });
+        });
+    </script>
     <script>
         // JavaScript pour basculer le menu
         const menuToggle = document.getElementById("menuToggle");
