@@ -1,10 +1,26 @@
 import { motion } from "framer-motion";
-import { Mail, FileText } from "lucide-react"; // On garde Lucide pour les icônes UI
-import { FaGithub, FaLinkedin } from "react-icons/fa"; // On utilise React Icons pour les marques
-
+import { Mail, FileText } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+// Assure-toi que ton PDF est bien dans src/assets/cv.pdf
 import cvFile from "../assets/cv.pdf";
 
 export default function Hero() {
+
+  // Fonction pour t'aider à trouver le problème si ça ne marche pas
+  const handleDownload = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    console.log("--- DEBUG DOWNLOAD ---");
+    console.log("1. Fichier importé :", cvFile);
+    console.log("2. Lien du bouton :", e.currentTarget.href);
+    
+    if (!cvFile) {
+      console.error("ERREUR : Le fichier PDF semble vide ou mal importé.");
+      alert("Erreur : Impossible de trouver le fichier CV.");
+      e.preventDefault();
+    } else {
+      console.log("SUCCÈS : Le téléchargement devrait se lancer.");
+    }
+  };
+
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden px-4">
       {/* Background Blobs Animés */}
@@ -46,28 +62,45 @@ export default function Hero() {
           transition={{ delay: 0.6 }}
           className="flex flex-wrap justify-center gap-4"
         >
-          {/* Bouton GitHub */}
-          <a href="https://github.com/adrienraynaudd" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-slate-800 hover:bg-slate-700 hover:text-cyan-400 transition-colors border border-slate-700">
+          {/* GitHub */}
+          <a 
+            href="https://github.com/adrienraynaudd" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="p-3 rounded-full bg-slate-800 hover:bg-slate-700 hover:text-cyan-400 transition-colors border border-slate-700"
+            aria-label="GitHub"
+          >
             <FaGithub size={24} />
           </a>
           
-          {/* Bouton LinkedIn */}
-          <a href="https://www.linkedin.com/in/Raynaud_adrien" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-slate-800 hover:bg-slate-700 hover:text-cyan-400 transition-colors border border-slate-700">
+          {/* LinkedIn */}
+          <a 
+            href="https://www.linkedin.com/in/Raynaud_adrien" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="p-3 rounded-full bg-slate-800 hover:bg-slate-700 hover:text-cyan-400 transition-colors border border-slate-700"
+            aria-label="LinkedIn"
+          >
             <FaLinkedin size={24} />
           </a>
           
-          {/* Bouton Email */}
-          <a href="mailto:adrien.raynaud.pro@gmail.com" className="p-3 rounded-full bg-slate-800 hover:bg-slate-700 hover:text-cyan-400 transition-colors border border-slate-700">
+          {/* Email */}
+          <a 
+            href="mailto:adrien.raynaud.pro@gmail.com" 
+            className="p-3 rounded-full bg-slate-800 hover:bg-slate-700 hover:text-cyan-400 transition-colors border border-slate-700"
+            aria-label="Email"
+          >
             <Mail size={24} />
           </a>
           
           {/* Bouton CV */}
-         <a 
-            href={cvFile} // On utilise la variable importée
-            download="CV_Adrien_Raynaud.pdf" // Nom du fichier une fois téléchargé
+          <a 
+            href={cvFile} 
+            download="CV_Adrien_Raynaud.pdf"
+            onClick={handleDownload}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-cyan-500 to-purple-600 font-semibold hover:opacity-90 transition-opacity text-white"
+            className="flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-cyan-500 to-purple-600 font-semibold hover:opacity-90 transition-opacity text-white cursor-pointer"
           >
             <FileText size={18} /> 
             Télécharger CV
