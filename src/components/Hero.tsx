@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { Mail, FileText } from "lucide-react"; // On garde Lucide pour les icônes UI
 import { FaGithub, FaLinkedin } from "react-icons/fa"; // On utilise React Icons pour les marques
 
+import cvFile from "../assets/cv.pdf";
+
 export default function Hero() {
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden px-4">
@@ -61,13 +63,15 @@ export default function Hero() {
           
           {/* Bouton CV */}
          <a 
-            href="/Portfolio/cv.pdf" 
-            download="CV_Adrien_Raynaud.pdf"
+            href={cvFile} // On utilise la variable importée
+            download="CV_Adrien_Raynaud.pdf" // Nom du fichier une fois téléchargé
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-cyan-500 to-purple-600 font-semibold hover:opacity-90 transition-opacity text-white"
-            >
+          >
             <FileText size={18} /> 
             Télécharger CV
-            </a>
+          </a>
         </motion.div>
       </div>
     </section>
