@@ -60,9 +60,14 @@ export default function Hero() {
           </a>
           
           {/* Bouton CV */}
-          <button className="flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-cyan-500 to-purple-600 font-semibold hover:opacity-90 transition-opacity">
-            <FileText size={18} /> Télécharger CV
-          </button>
+         <a 
+            href="/Portfolio/cv.pdf" 
+            download="CV_Adrien_Raynaud.pdf"
+            className="flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-cyan-500 to-purple-600 font-semibold hover:opacity-90 transition-opacity text-white"
+            >
+            <FileText size={18} /> 
+            Télécharger CV
+            </a>
         </motion.div>
       </div>
     </section>
