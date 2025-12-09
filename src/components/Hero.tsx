@@ -84,14 +84,14 @@ export default function Hero() {
             <FaLinkedin size={24} />
           </a>
           
-          {/* Email */}
-          <a 
-            href="mailto:adrien.raynaud.pro@gmail.com" 
-            className="p-3 rounded-full bg-slate-800 hover:bg-slate-700 hover:text-cyan-400 transition-colors border border-slate-700"
-            aria-label="Email"
-          >
-            <Mail size={24} />
-          </a>
+         {/* Bouton Email */}
+        <a 
+        href="mailto:adrien.raynaud.pro@gmail.com?subject=Contact%20via%20Portfolio&body=Bonjour%20Adrien," 
+        className="p-3 rounded-full bg-slate-800 hover:bg-slate-700 hover:text-cyan-400 transition-colors border border-slate-700"
+        aria-label="Email"
+        >
+        <Mail size={24} />
+        </a>
           
           {/* Bouton CV */}
           <a 
